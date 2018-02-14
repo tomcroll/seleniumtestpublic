@@ -31,5 +31,10 @@ try:
     # You should see "Skywise! - Google Search"
     print ("Driver used " + driver.title)
 
+except TimeoutException as ex:
+    isrunning = 0
+    print("Exception has been thrown. " + str(ex))
+    driver.close()
+
 finally:
     driver.quit()
