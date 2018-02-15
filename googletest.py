@@ -29,7 +29,7 @@ try:
     WebDriverWait(driver, 10).until(EC.title_contains("Skywise!"))
 
     # You should see "Skywise! - Google Search"
-    print ("Driver used " + driver.title)
+    print ("Driver used is " + driver.title)
 
 except TimeoutException as ex:
     isrunning = 0
