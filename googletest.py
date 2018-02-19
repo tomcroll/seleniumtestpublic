@@ -33,7 +33,7 @@ try:
 
 except TimeoutException as ex:
     isrunning = 0
-    print("Exception has been thrown. " + str(ex))
+    print("Exception has been thrown " + str(ex))
     driver.close()
 
 finally:
