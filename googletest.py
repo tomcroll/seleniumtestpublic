@@ -11,7 +11,7 @@ driver = webdriver.Ie()
 driver.get("http://www.google.com")
 
 # the page is ajaxy so the title is originally this:
-print ("Driver used " + driver.title)
+print ("Driver used = " + driver.title)
 
 # find the element that's name attribute is q (the google search box)
 inputElement = driver.find_element_by_name("q")
